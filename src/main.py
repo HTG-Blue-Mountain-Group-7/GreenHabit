@@ -18,7 +18,7 @@ class ChildApp(GridLayout):
         self.press.bind(on_press=self.submit)
         self.add_widget(self.press)
 
-    def submit(self):
+    def submit(self, instance):
         user_data = UserData()
         user_data.name = self.student_name.text
         print(user_data)
@@ -35,6 +35,7 @@ class UserData:
 
     def __str__(self):
         return f'Student name: {self.name}\n'
-print('Hello Wolrd')
+
+
 if __name__ == '__main__':
     ParentApp().run()
