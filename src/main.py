@@ -35,6 +35,6 @@ class UserData:
 
     def __str__(self):
         return f'Student name: {self.name}\n'
-
+print('Hello Wolrd')
 if __name__ == '__main__':
     ParentApp().run()
